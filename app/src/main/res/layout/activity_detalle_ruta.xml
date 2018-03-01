@@ -1,0 +1,220 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/appbardetalleruta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <ImageView
+                    android:id="@android:id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:focusable="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/logo_bar" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlEsperaMetas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="Cargando..."
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_espera_detalle_metas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/appbardetalleruta"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ruta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="28dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="18dp"
+                android:text="Notificación General Notificación General"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:paddingRight="@dimen/feed_item_padding_left_right">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/desdsfsfRuta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="7dp"
+                        android:text="Origen: "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/feed_item_profile_name"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/desOrigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="7dp"
+                        android:text="Notificación Gefsrtertertertertertefsdfsdfsdfsdfsdfsdfsdfsdfsdftertertertertertertertertertertertertertertdfsdfsdfsdfsdfsdfsdfsdfgdfgdgdfgdfgdfgdfgdfgdgfdgdgfdfgdfgdfgdfgdfgdfgdfgdfgdfgdgdfgdgdgdgdfgdfgdfgdfgdfgdgdgdgdgdgdfgsdnyutyueral Notificación General"
+                        android:textSize="@dimen/feed_item_profile_name"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:paddingRight="@dimen/feed_item_padding_left_right">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/dasdasd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="7dp"
+                        android:text="Destino: "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/feed_item_profile_name"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/desDestino"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Notificación Genvxvxcvxcvxcvfsdfsdfsdfsdfsfvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvxvcvxcvxcvxvxcvxcvxcvxcvxcvvxeral Notificación General"
+                        android:textSize="@dimen/feed_item_profile_name"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="13dp" />
+
+            <TextView
+                android:id="@+id/editTextNumConvenios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="Mis Metas"
+                android:textColor="@color/colorBlanco"
+                android:textSize="15sp" />
+            
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/fondoGris"/>
+
+            <GridView
+                android:id="@+id/gridMetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/fondoGris"
+                android:columnWidth="160dp"
+                android:horizontalSpacing="9dp"
+                android:numColumns="2"
+                android:verticalSpacing="9dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

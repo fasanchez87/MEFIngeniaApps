@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewNotificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardElevation="3dp"
+        card_view:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               >
+
+                <TextView
+                    android:id="@+id/textViewCsssategoriaNotificacion"
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold"
+                    android:background="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/feed_item_padding_left_right"
+                    android:paddingRight="@dimen/feed_item_padding_left_right">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/logoRuta"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:scaleType="fitCenter"
+                            card_view:srcCompat="@drawable/logo_ruta" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/feed_item_profile_info_padd"
+                        android:paddingRight="@dimen/feed_item_profile_info_padd"
+                        android:paddingStart="@dimen/feed_item_profile_info_padd"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:id="@+id/desRuta"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Notificación General Notificación General"
+                            android:textSize="@dimen/feed_item_profile_name"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textViewPorcentajeRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorBlanco"
+                    android:background="@drawable/rounded_corner"
+                    />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

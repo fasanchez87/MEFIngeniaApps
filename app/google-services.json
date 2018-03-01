@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "582419442739",
+    "firebase_url": "https://mefinanciero.firebaseio.com",
+    "project_id": "mefinanciero",
+    "storage_bucket": "mefinanciero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582419442739:android:73e90b73128b4949",
+        "android_client_info": {
+          "package_name": "com.ingeniapps.mef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582419442739-gnc622itchc66is3p890j1orlcuuoc9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBATvvj3YhsvdrGtmLl5TluRC0R0QRv1Sc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

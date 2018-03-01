@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardElevation="3dp"
+        card_view:contentPadding="0dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="11dp"
+            android:paddingTop="7dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="1dp">
+
+                <TextView
+                    android:id="@+id/nomTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="7dp"
+                    android:text="Tarea rererererererererererer1sdasdasdadasdsd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:paddingBottom="10dp"
+                    android:text="2016-12-12"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:baselineAligned="false"
+                android:visibility="visible">
+
+                <Switch
+                    android:id="@+id/switchTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:text="Notificarme de Ofertas y Descuentos"
+                    android:textColor="@color/colorBlanco" /><!--gravity of the Switch-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

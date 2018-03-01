@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ingeniapps.mef.fragments.gps">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/layoutSinRutas">
+
+            <ImageView
+                android:id="@+id/not_found_ruta"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sin_rutas"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/layoutMacroEsperaRutas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <ProgressBar
+                    android:id="@+id/progressBarHistorialPedidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateTint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBarHistorialPedidos"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:text="Cargando..."
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear_rutas"
+            android:visibility="gone"
+            android:background="@color/colorBlanco">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/logo_mis_rutas" />
+
+
+            <TextView
+                android:id="@+id/editTextNumConvenios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="Mis Rutas"
+                android:textColor="@color/colorBlanco"
+                android:textSize="15sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_rutas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
